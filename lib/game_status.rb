@@ -68,7 +68,7 @@ end
     end
   end
 
-  def over?()
+  def over?(board)
     if draw?(board)
       return true
     end
