@@ -62,7 +62,7 @@ end
 
     if won?(board)
       return false
-    elsif full?(board) && !won(board)
+    elsif full?(board) 
       return true
     end
   end
