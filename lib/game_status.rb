@@ -57,3 +57,9 @@ end
       return false
     end
   end
+
+  def draw?(board)
+    if full?(board)
+      return true
+    end
+  end
