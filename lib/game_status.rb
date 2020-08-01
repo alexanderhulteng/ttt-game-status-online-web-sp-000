@@ -38,7 +38,7 @@ def won?(board)
        end
      end
 
-  if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  if board == [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     return false
   end
 end
