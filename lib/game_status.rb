@@ -41,6 +41,20 @@ def won?(board)
   if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     return false
   end
+end
 
-
+def full?(board)
+  def full?(board)
+  spot_taken = 0
+    9.times do|i|
+      if position_taken?(board, i)
+        spot_taken += 1
+      end
+    end
+    if spot_taken == 9
+      return true
+    else
+      return false
+    end
+  end
 end
