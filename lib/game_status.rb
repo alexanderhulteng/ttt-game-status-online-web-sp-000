@@ -41,6 +41,7 @@ def won?(board)
      end
 
      if draw?(board)
+        puts "hi"
          return false
        elsif !full?(board)
          return false
