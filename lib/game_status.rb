@@ -1,5 +1,5 @@
-#board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-board = ["x", "o", "x", "x", "x", "x", "x", "x", "x"]
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+#board = ["x", "x", "x", "x", "x", "x", "x", "x", "x"]
 
 def position_taken?(board, index)
   if !(board[index].nil? || board[index] == " ")
@@ -22,14 +22,6 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if draw?(board)
-     puts "hig"
-      return false
-    elsif !full?(board)
-      puts 'hie'
-      return false
-    end
-
   WIN_COMBINATIONS.each do |i|
 
       win_index_1 = i[0]
@@ -41,7 +33,6 @@ def won?(board)
       position_3 = board[win_index_3]
 
       if position_1 == "X" && position_2 == "X" && position_3 == "X"
-        puts "uhh"
         return i
 
       elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
@@ -49,7 +40,11 @@ def won?(board)
        end
      end
 
-
+     if draw?(board)
+         return false
+       elsif !full?(board)
+         return false
+       end
    end
 
 
