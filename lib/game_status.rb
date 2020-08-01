@@ -82,6 +82,8 @@ def over?(board)
     return true
   elsif !won?(board)
     return false
+  elsif full?
+    return true
   end
 end
 
