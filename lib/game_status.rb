@@ -64,8 +64,11 @@ end
       return false
     elsif full?(board)
       return true
-
-
     end
+  end
 
+  def over?()
+    if draw?(board)
+      return true
+    end
   end
