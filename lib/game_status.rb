@@ -72,3 +72,15 @@ end
       return true
     end
   end
+
+  def winner(board)
+    if won?(board)
+      winner_value = won?(board)
+      the_winner = winner_value[1]
+      if board[the_winner] == "X"
+        return "X"
+      elsif board[the_winner] == "O"
+        return "O"
+      end
+    end
+  end
