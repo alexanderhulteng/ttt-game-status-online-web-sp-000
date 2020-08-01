@@ -62,8 +62,7 @@ end
 
     if won?(board)
       return false
-    elsif full?(board)
-      puts "yeahhh"
+    elsif full?(board) && !won(board)
       return true
     end
   end
@@ -73,5 +72,3 @@ end
       return true
     end
   end
-
-over?(board)
