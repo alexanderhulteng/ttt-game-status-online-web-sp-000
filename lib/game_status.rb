@@ -41,10 +41,10 @@ def won?(board)
      end
 
      if draw?(board)
-        puts "hi"
+        puts "hig"
          return false
        elsif !full?(board)
-         puts 'hi'
+         puts 'hie'
          return false
        end
    end
