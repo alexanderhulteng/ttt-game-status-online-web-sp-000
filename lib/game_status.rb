@@ -67,11 +67,8 @@ spot_taken = 0
 end
 
 def draw?(board)
-  if !full?(board)
-    return false
-  elsif full?(board)
+  if full?(board)
     return true
-
   end
   if won?(board)
     return false
