@@ -1,5 +1,5 @@
 #board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-board = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
+board = ["X", "X", "X", "X", "X", "X", "X", "X", "X"]
 
 def position_taken?(board, index)
   if !(board[index].nil? || board[index] == " ")
@@ -33,7 +33,6 @@ def won?(board)
       position_3 = board[win_index_3]
 
       if position_1 == "X" && position_2 == "X" && position_3 == "X"
-        print "yay"
         return i
 
       elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
@@ -42,7 +41,6 @@ def won?(board)
      end
 
      if draw?(board)
-       print "no"
          return false
        elsif !full?(board)
          return false
@@ -67,8 +65,11 @@ spot_taken = 0
 end
 
 def draw?(board)
-  if full?(board)
+  if !full?(board)
+    return false
+  elsif full?(board)
     return true
+
   end
   if won?(board)
     return false
@@ -82,8 +83,6 @@ def over?(board)
     return true
   elsif !won?(board)
     return false
-  elsif full?
-    return true
   end
 end
 
