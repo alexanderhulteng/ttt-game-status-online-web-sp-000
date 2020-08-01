@@ -97,3 +97,5 @@ def winner(board)
     end
   end
 end
+
+won?(board)
