@@ -73,3 +73,5 @@ end
       return true
     end
   end
+
+over?(board)
