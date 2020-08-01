@@ -1,5 +1,5 @@
 #board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-board = ["X", "X", "X", "X", "X", "X", "X", "X", "X"]
+board = ["X", "O", "X", "O", "O", "X", "X", "X", "X"]
 
 def position_taken?(board, index)
   if !(board[index].nil? || board[index] == " ")
