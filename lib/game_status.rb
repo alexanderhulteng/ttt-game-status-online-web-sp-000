@@ -40,12 +40,11 @@ def won?(board)
        end
      end
 
-      if draw?(board)
+     if draw?(board)
          return false
        elsif !full?(board)
          return false
-
-     end
+       end
    end
 
 
@@ -97,4 +96,4 @@ def winner(board)
   end
 end
 
-winner(board)
+
