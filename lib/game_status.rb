@@ -60,7 +60,7 @@ end
 
   def draw?(board)
 
-    if won?
+    if won?(board)
       return false
 
     end
