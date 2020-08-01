@@ -44,6 +44,7 @@ def won?(board)
         puts "hi"
          return false
        elsif !full?(board)
+         puts 'hi'
          return false
        end
    end
