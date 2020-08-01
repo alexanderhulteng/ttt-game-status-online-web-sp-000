@@ -43,7 +43,7 @@ def won?(board)
   end
 end
 
-def full?(board)
+
   def full?(board)
   spot_taken = 0
     9.times do|i|
@@ -57,4 +57,3 @@ def full?(board)
       return false
     end
   end
-end
