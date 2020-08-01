@@ -65,7 +65,7 @@ spot_taken = 0
 end
 
 def draw?(board)
-if 
+if
 
 end
 
