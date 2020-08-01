@@ -62,4 +62,7 @@ end
     if full?(board)
       return true
     end
+    if won?(board)
+      return false
+    end
   end
